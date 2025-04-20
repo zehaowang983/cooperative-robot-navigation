@@ -1,0 +1,12 @@
+**/__pycache__
+onpolicy/scripts/results/*
+onpolicy/visualization/*
+onpolicy/training*
+onpolicy/evaluating*
+*.out
+onpolicy/*.log
+onpolicy/*.out
+
+SOGMP_plus/runs/*
+SOGMP_plus/models*
+SOGMP_plus/datasets*
