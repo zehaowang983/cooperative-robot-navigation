@@ -8,5 +8,4 @@ onpolicy/*.log
 onpolicy/*.out
 
 SOGMP_plus/runs/*
-SOGMP_plus/models*
 SOGMP_plus/datasets*
