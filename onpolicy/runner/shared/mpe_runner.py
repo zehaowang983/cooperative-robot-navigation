@@ -115,7 +115,10 @@ class MPERunner(Runner):
                         ego_pred_ogm = ogm_pred[0, agent_id] # [self.vis_seq+1, 64, 64]
                         ego_pred_ogm = np.flip(ego_pred_ogm, axis=1)  # Flip height to match (0,0) at bottom-left
                         ego_pred_ogm = (ego_pred_ogm * 255).astype(np.uint8) 
-                        all_ogm_pred_frames[agent_id].append(ego_pred_ogm[-1])
+                        if self.use_prediction:
+                            all_ogm_pred_frames[agent_id].append(ego_pred_ogm[0])
+                        else:
+                            all_ogm_pred_frames[agent_id].append(ego_pred_ogm[-1])
                         # all_ogm_pred_frames[agent_id].append(np.concatenate(ego_pred_ogm, axis=1))
                         all_ogm_gt_frames[agent_id].append(np.concatenate(ogm_obs[0, agent_id] * 255, axis=1))
 

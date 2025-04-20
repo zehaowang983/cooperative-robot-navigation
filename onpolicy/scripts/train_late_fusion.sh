@@ -13,7 +13,7 @@ no_graphics=False
 
 # episode_length=150
 episode_length=1000
-num_env_steps=1000000
+num_env_steps=1500000
 # data_chunk_length=15
 data_chunk_length=20
 num_mini_batch=10
@@ -48,7 +48,7 @@ do
     --scenario_name ${scenario} \
     --num_agents ${num_agents} \
     --n_training_threads 1 \
-    --n_rollout_threads 8 \
+    --n_rollout_threads 10 \
     --n_eval_rollout_threads 1 \
     --seed ${seed} \
     --unity_env_path ${unity_env_path} \

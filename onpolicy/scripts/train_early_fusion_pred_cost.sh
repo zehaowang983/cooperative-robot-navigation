@@ -13,7 +13,7 @@ no_graphics=False
 
 # episode_length=150
 episode_length=1000
-num_env_steps=1000000
+num_env_steps=1500000
 # data_chunk_length=15
 data_chunk_length=20
 num_mini_batch=10
