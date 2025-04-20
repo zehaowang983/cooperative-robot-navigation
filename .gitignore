@@ -1,4 +1,5 @@
 **/__pycache__
+**/onpolicy.egg-info/
 onpolicy/scripts/results/*
 onpolicy/visualization/*
 onpolicy/training*
@@ -9,3 +10,10 @@ onpolicy/*.out
 
 SOGMP_plus/runs/*
 SOGMP_plus/datasets*
+
+onpolicy/train_1_Data/*
+onpolicy/train_2_Data/*
+onpolicy/train_3_Data/*
+onpolicy/test_2_Data/*
+onpolicy/test_2_Data/*
+
